@@ -123,7 +123,19 @@ class JullixSensor(CoordinatorEntity, SensorEntity):
         data = self.coordinator.data.get(self._category)
         if not data:
             return None
-        sample = data[0] if isinstance(data, list) else data
+        if isinstance(data, list):
+            # find the sample matching this sensor's device_id
+            sample = next(
+                (
+                    d
+                    for d in data
+                    if (d.get("id") or d.get("meter") or self._category)
+                    == self._device_id
+                ),
+                data[0],  # fallback to first sample if id not found
+            )
+        else:
+            sample = data
         flat = _flatten(sample)
         val = flat.get(self._key)
         # Convert Jullix meter timestamps (e.g. 250518214500) to ISO8601
