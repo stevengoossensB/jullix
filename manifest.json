@@ -1,0 +1,10 @@
+{
+  "domain": "jullix",
+  "name": "Jullix Energy Meter",
+  "version": "0.1",
+  "documentation": "https://example.com",
+  "requirements": ["aiohttp"],
+  "dependencies": [],
+  "codeowners": ["@yourgithub"],
+  "config_flow": true
+}
