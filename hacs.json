@@ -1,0 +1,7 @@
+{
+  "name": "Jullix Home Assistant Integration",
+  "domain": "jullix",
+  "content_in_root": true,
+  "render_readme": true,
+  "zip_release": false
+}

@@ -6,8 +6,17 @@ This custom integration brings that data into Home Assistant. Sensors are create
 
 ## Installation
 
+### Using HACS
+
+1. In HACS, add [stevengoossensB/jullix](https://github.com/stevengoossensB/jullix) as a **Custom Repository** with category `integration`.
+2. Install the **Jullix Home Assistant Integration** from the HACS store.
+3. Restart Home Assistant.
+4. Add the Jullix integration via the Home Assistant integrations page, specifying the correct host if different from the default.
+
+### Manual
+
 1. Copy this repository into the `config/custom_components/jullix` directory of your Home Assistant installation.
 2. Restart Home Assistant.
-3. Add the Jullix integration via the Home Assistant integrations page, specifying the correct host if different from the default.
+3. Add the integration from the integrations page.
 
 After setup, the sensors provided by your Jullix system will be available in Home Assistant so you can monitor energy consumption and production directly from your dashboard.
