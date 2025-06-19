@@ -145,6 +145,8 @@ class JullixSensor(CoordinatorEntity, SensorEntity):
                 return dt.replace(tzinfo=timezone.utc).isoformat()
             except ValueError:
                 _LOGGER.error("Unable to parse timestamp %s for sensor %s", val, self._key)
+        if isinstance(val, (int, float)):
+            return round(val, 2)
         return val
 
     @property
