@@ -2,9 +2,9 @@
   "domain": "jullix",
   "name": "Jullix Energy Meter",
   "version": "0.1",
-  "documentation": "https://example.com",
+  "documentation": "https://github.com/stevengoossensB/jullix",
   "requirements": ["aiohttp"],
   "dependencies": [],
-  "codeowners": ["@yourgithub"],
+  "codeowners": ["@stevengoossensB"],
   "config_flow": true
 }
