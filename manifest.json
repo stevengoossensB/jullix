@@ -1,7 +1,7 @@
 {
   "domain": "jullix",
   "name": "Jullix Energy Meter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "documentation": "https://github.com/stevengoossensB/jullix",
   "requirements": ["aiohttp"],
   "dependencies": [],
